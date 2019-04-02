@@ -10,6 +10,10 @@ h1, h2 {
   font-family: 'Sumana', serif;
 }
 
+h2 {
+  line-height: 30px;
+}
+
 form {
   margin: 50px;
   text-align: center;
