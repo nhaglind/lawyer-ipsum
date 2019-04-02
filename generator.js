@@ -12,7 +12,7 @@ GenerateNewText.prototype.getRandomSentence = function() {
 
 GenerateNewText.prototype.getParagraph = function() {
   let paragraph = "";
-  let minimumCharacterLength = 250;
+  let minimumCharacterLength = 350;
   let firstSentence = true;
   while (paragraph.length < minimumCharacterLength) {
     if (firstSentence) {
