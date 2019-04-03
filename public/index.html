@@ -1,25 +1,28 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>Lawyer Ipsum</title>
-  <meta name="description content="A lorem ipsum generator to use for attorney and legal websites.">
+  <title>Lawyer Ipsum - Lorem Ipsum Generator</title>
+  <meta name="description" content="A lorem ipsum generator to spit out text for attorney and law firm applications.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/style.css"></head>
   <link href="https://fonts.googleapis.com/css?family=Sumana" rel="stylesheet">
   <link rel="icon" type="image/png" href="favicon.png">
 <body>
 <div class="container">
+  <center><img src="favicon.png" height="32" width="32" alt="document drawer"></center>
   <h1>Lawyer Ipsum</h1>
-  <h2>A lorem ipsum generator to use for attorney and legal websites</h2>
+  <h2>A lorem ipsum generator for attorney and law firm applications</h2>
   <p>This is a dumb tool, absolutely not meant to be taking seriously, lawyer-ipsum is not a law firm, nothing on this site is legal advice, this is simply generated gibberish using typical phrases from attorney sites.</p>
   <form action="/" method="POST">
-    <input type="number" class="number" name="numberOfParagraphs" value="1">
+    <input type="number" class="number" name="numberOfParagraphs" value="1" aria-label="paragraph input">
     <input type="submit" class="button" value="Generate">
   </form>
   <div class="generated-text">
+    <div class='word-counter'></div>
     <div class='placeholder-div'></div>
   </div>
   <footer>
-    <a href="https://github.com/nhaglind"><img src="github.png" height="20px" width="20px"></a>
+    <a href="https://github.com/nhaglind" alt="github"><img src="github.png" height="20px" width="20px" alt="github logo"></a>
   </footer>
 </div>
 </body>

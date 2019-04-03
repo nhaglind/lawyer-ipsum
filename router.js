@@ -17,8 +17,9 @@ router.post('/', (request, response) => {
     let query = inputValue.toString();
     let numberOfParagraphs = querystring.parse(query).numberOfParagraphs;
     let loremIpsumText = loremIpsum.getAllParagraphs(numberOfParagraphs);
+    let IpsumLength = loremIpsumText.split(" ").length + " words";
     let fileContents = fs.readFileSync("./public/index.html", {encoding: "utf8"});
-    fileContents = fileContents.replace("<div class='placeholder-div'></div>", loremIpsumText);
+    fileContents = fileContents.replace("<div class='placeholder-div'></div>", loremIpsumText).replace("<div class='word-counter'></div>", IpsumLength);
     response.setHeader('Content-Type', 'text/html');
     response.write(fileContents);
     response.end();
